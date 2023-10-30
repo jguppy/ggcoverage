@@ -129,7 +129,7 @@ ggplot_add.transcript <- function(object, plot, object_name) {
   # convert dataframe to GR
   tx.gr <- GenomicRanges::makeGRangesFromDataFrame(gene.tx.df.tx,
     ignore.strand = TRUE,
-    seqnames.field = c("seqnames"),
+    seqnames.field = "seqnames",
     start.field = "start",
     end.field = "end",
     strand.field = "strand"
